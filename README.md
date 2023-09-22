@@ -32,7 +32,7 @@ So that the function is available when the user import the module.
 
 We used the function `gcs_server_sync` from `python_record.py`
 
-- Comment (so it's not taken into account) the libraries `sensors`, `pcf8574`, `utils`, `httplib`
+- Comment (so it's not taken into account) the libraries `sensors`, `pcf8574`, `utils`, `httplib`. Some of these libraries handles real raspi hardware, such as leds and scripts using them can't run on computers.
 - In the function `gcs_server_sync` some modifications also need to be done:
     - L.243 set `GLOB_is_connected = True`
     - L. 245, L.257, L.304  comment `disable_modem()` / `enable_modem()`
